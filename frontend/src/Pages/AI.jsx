@@ -2,7 +2,7 @@ import React from 'react'
 import react from "../assets/react.png";
 const AI = () => {
     return (
-        <div id='/AI' className=" text-center sm:text:center md:text-start grid-cols-1  items-center gap-8 max-w-full md:h-full mx-auto py-8 bg-black  ">
+        <div className=" text-center sm:text:center md:text-start grid-cols-1  items-center gap-8 max-w-full md:h-full mx-auto py-8 bg-black  ">
           <div className="md:px-32 p-8 text-center">
             <p className="text-3xl sm:text-4xl mx-auto mb-3 md:mb-10 md:text-6xl font-bold text-white">
               MACHINE LEARNING MOBILE PHONE PRICE PREDICTOR

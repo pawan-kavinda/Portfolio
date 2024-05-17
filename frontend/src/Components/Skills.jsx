@@ -6,6 +6,8 @@ import sql from "../assets/sql.png";
 import tailwind from "../assets/tailwind.jpg";
 import node from "../assets/node.png";
 import {motion} from 'framer-motion';
+import mongo from "../assets/mongo.svg";
+import fb from "../assets/firebase.png";
 
 
 const motionIcons = (duration)=>({
@@ -59,12 +61,12 @@ const Skills = () => {
         </motion.div>
         <motion.div variants={motionIcons(2.5)} initial="initial" animate="animate"  className='transform transition-transform duration-300 hover:scale-105 overflow-hidden shadow-lg shadow-pink-700 justify-center
          group-container flex flex-col items-center m-4 sm:my-0 md:rounded-2xl md:border-4 border-neutral-800 border-2 rounded-xl h-[100px] md:h-[120px] w-[100px] md:w-[120px]'>
-            <img src={node} width={100} height={100}  alt=''/>
+            <img src={mongo} width={100} height={100}  alt=''/>
             
         </motion.div>
         <motion.div variants={motionIcons(2.5)} initial="initial" animate="animate"  className='transform transition-transform duration-300 hover:scale-105 overflow-hidden shadow-lg shadow-pink-700 justify-center
          group-container flex flex-col items-center m-4 sm:my-0 md:rounded-2xl md:border-4 border-neutral-800 border-2 rounded-xl h-[100px] md:h-[120px] w-[100px]  md:w-[120px]'>
-            <img src={node} width={100} height={100}  alt=''/>
+            <img src={fb} width={100} height={100}  alt=''/>
            
         </motion.div>
     </div>

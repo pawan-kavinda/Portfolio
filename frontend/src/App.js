@@ -16,11 +16,8 @@ import {useRef,useEffect } from "react";
 
 
 function App() {
-
-
-
   return (
-    <BrowserRouter>
+    <BrowserRouter  scrollRestoration="auto">
       <div>
         <Navbar />
         <Routes>
@@ -28,6 +25,7 @@ function App() {
           <Route path="/ai" element={<AI />} />
           <Route path="/supermarket" element={<SM />} />
           <Route path="/ems" element={<EMS />} />
+          <Route path="/groupchat" element={<GC />} />
           <Route path="/foodstore" element={<FS />} />
         </Routes>
       </div>

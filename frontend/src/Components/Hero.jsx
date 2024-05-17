@@ -2,6 +2,7 @@ import React from "react";
 import profile from "../assets/profile.jpg";
 import { TypeAnimation } from "react-type-animation";
 import {motion} from 'framer-motion'
+import resume from '../assets/resume.pdf'
 const Hero = () => {
   return (
     <div className=" text-center sm:text:center md:text-start grid grid-cols-1 sm:grid-cols-3 items-center gap-8 max-w-full md:h-screen mx-auto py-8 bg-black  " id="hero">
@@ -51,7 +52,7 @@ const Hero = () => {
         <div className="my-8 flex items-center justify-center md:justify-start">
           <div className="my-6">
             <a
-              href="/"
+              href="../assets/resume.pdf"  download="Pawan_Kavinda_Dissanayake_Resume.pdf"
               className="ml-6 px-6 py-3 w-full border border-white hover:border-collapse rounded-xl mr-4 bg-gradient-to-br from-blue-950 to bg-green-600 text-white hover:border-none">
             
                Download Resume
