@@ -3,7 +3,7 @@ import react from "../assets/react.png";
 const FS = () => {
   return (
     <div className=" text-center sm:text:center md:text-start grid-cols-1  items-center gap-8 max-w-full md:h-full mx-auto py-8 bg-black  ">
-      <div className="md:px-64 sm:px-32 p-16 pt-24 text-center">
+      <div className="md:px-64 sm:px-16 p-8 pt-24 text-center">
         <p className="text-3xl sm:text-4xl mx-auto mb-3 md:mb-10 md:text-6xl font-bold text-white">
           FOOD STORE MOBILE APPLICATION
         </p>

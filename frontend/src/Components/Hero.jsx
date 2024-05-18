@@ -8,13 +8,13 @@ const Hero = () => {
   return (
     <div className="text-center sm:text:center md:text-start grid grid-cols-1 sm:grid-cols-3 items-center gap-8 max-w-full md:h-screen mx-auto py-8
     bg-black " id="hero">
-      <div className="col-span-1 my-auto mx-auto">
+      <div className="col-span-1 pt-24 md:pt-2 my-auto mx-auto">
         <div className="my-auto mx-auto w-[200px] h-auto lg:w-[300px]">
-          <motion.img initial={{x:-100,opacity:0}} animate={{x:0,opacity:1}} transition={{duration:0.5,delay:0.5}}  src={about} alt="profile image" className=" rounded-3xl "/>
+          <motion.img initial={{x:-100,opacity:0}} animate={{x:0,opacity:1}} transition={{duration:0.5,delay:0.5}} className="rounded-2xl" src={about} alt="profile image" />
         </div>
 
       </div>
-      <div className="col-span-2 my-auto px-10">
+      <div className="col-span-2 md:ml-8 my-auto px-10">
         <h1 className="text-white text-4xl sm:text-5xl lg:text-6xl font-extrabold">
           {/* <span className="primary-color justify-center">I'M A</span> */}
           <br />
@@ -27,6 +27,8 @@ const Hero = () => {
               1000,
               "MOBILE DEV",
               1000,
+              "AI DEVELOPER",
+              1000
             ]}
             wrapper="span"
             speed={50}

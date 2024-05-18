@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-bl from-indigo-800 via-zinc-900 to-neutral-900 text-center text-white dark:bg-neutral-600">
-      <div className="container pt-9">
+    <footer className="bg-gradient-to-bl from-indigo-800 via-zinc-900 to-neutral-900 text-center text-white dark:bg-neutral-600 items-center">
+      <div className="container pt-9 flex justify-center">
         <div className="mb-9 flex justify-center">
           <a
             href="https://web.facebook.com/pawan.dissanayaka.9/"
@@ -62,38 +62,38 @@ const Footer = () => {
       </div>
 
       {/* <!--Copyright section--> */}
-      <div className="flex justify-center">
-        <div className="bg-neutral-300 p-4 flex text-center text-neutral-700 bg-transparent dark:text-neutral-200">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="mx-auto h-6 w-6"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z"
-              fillRule="evenodd"
-              clipRule="evenodd"
-            />
-          </svg>
-          <p className="px-4 font-bold"> pawankd909@gmail.com</p>
-        </div>
-        <div className="bg-neutral-300 p-4 flex text-center text-neutral-700  bg-transparent dark:text-neutral-200">
-          
-            <svg
-              aria-hidden="true"
-              focusable="false"
-              class="icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-              width="1em"
-              height="1em"
-            >
-              <path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z" />
-            </svg>
-          <p className="px-4 font-bold">+94767072322</p>
-        </div>
-      </div>
+      <div className="flex flex-col items-center px-16 justify-center">
+  <div className="bg-neutral-300 p-4 flex text-center text-neutral-700 bg-transparent dark:text-neutral-200">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="mx-auto h-5 w-5"
+      fill="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z"
+        fillRule="evenodd"
+        clipRule="evenodd"
+      />
+    </svg>
+    <p className="px-4 text-sm font-bold"> pawankd909@gmail.com</p>
+  </div>
+  <div className="bg-neutral-300 p-4 flex text-center text-neutral-700 bg-transparent dark:text-neutral-200">
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      class="icon"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 512 512"
+      width="1em"
+      height="1em"
+    >
+      <path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z" />
+    </svg>
+    <p className="px-4 text-sm  font-bold">+94767072322</p>
+  </div>
+</div>
+
     </footer>
   );
 };

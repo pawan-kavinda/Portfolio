@@ -19,7 +19,7 @@ function App() {
   return (
     <BrowserRouter  scrollRestoration="auto">
       <div>
-        <Navbar />
+       
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/ai" element={<AI />} />
@@ -36,6 +36,7 @@ function App() {
 function MainPage() {
   return (
     <div>
+       <Navbar />
       <Hero />
       <Skills />
       <About />

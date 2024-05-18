@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-black h-[100px] text-xl text-white max-w-[1550px] mx-auto flex justify-between items-center px-20 fixed top-0 left-0 right-0 z-50">
-      <h1 className="text-xl md:text-2xl font-bold bg-gradient-to-bl from-fuchsia-500 to-indigo-900 bg-clip-text text-transparent ml-4">
+      <h1 className="text-xl md:px-8 md:text-2xl font-bold bg-gradient-to-r from-slate-200 to-orange-600 bg-clip-text text-transparent ml-4">
         PAWAN <span className="hidden sm:hidden md:inline">KAVINDA</span>
       </h1>
       <ul className="hidden md:flex">
@@ -65,7 +65,7 @@ const Navbar = () => {
           </motion.li>
         </a>
       </ul>
-      <ul className="hidden md:flex bg-gradient-to-bl from-fuchsia-500 to-indigo-900 bg-clip-text text-transparent ">
+      <ul className="hidden font-bold md:text-2xl text-xl md:flex bg-gradient-to-r from-slate-200 to-orange-600 bg-clip-text text-transparent ">
         <li className="p-5">
           <a href="#about">About</a>
           

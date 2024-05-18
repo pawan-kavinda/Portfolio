@@ -25,11 +25,12 @@ const About = () => {
           >
             About Me
           </motion.h2>
-          <motion.p
+          <motion.p 
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 1 }}
-            className="text-center md:px-16 lg:text-lg"
+            className=" md:px-16 lg:text-lg 
+          "
           >
             I am Pawan Dissanayake, 3 rd year computer engineering undergraduate
             student in Faculty of Engineering, University of Ruhuna. A
