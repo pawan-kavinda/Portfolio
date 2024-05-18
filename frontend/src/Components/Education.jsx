@@ -4,7 +4,7 @@ const Education = () => {
   return (
     <div className="text-white bg-black mx-auto max-w-full " id="about">
         <div className="p-2 text-center">
-        <motion.p initial={{x:-100,opacity:0}} animate={{x:0,opacity:1}} transition={{duration:0.5,delay:0.5}} className="text-4xl  p-6 md:px-64 mb-3 md:text-6xl font-bold text-white">Education</motion.p>
+        <motion.p initial={{x:-100,opacity:0}} animate={{x:0,opacity:1}} transition={{duration:0.5,delay:0.5}} className="text-4xl  p-6 md:px-64 mb-3 md:text-6xl font-bold bg-gradient-to-bl from-fuchsia-500 to-indigo-900 bg-clip-text text-transparent">Education</motion.p>
         <motion.div initial={{x:100,opacity:0}} animate={{x:0,opacity:1}} transition={{duration:0.5,delay:1}} className='mb-[20px] bg-gray-800 p-4 rounded-3xl max-w-[600px] mx-auto transform transition-transform duration-300 hover:scale-105 overflow-hidden shadow-lg shadow-green-700'>
             <p className='text-lg md:text-3xl'>Higher Studies</p>
             <p className='text-gray-500'>Faculty of Engineering University of Ruhuna(2020-Present)</p>

@@ -26,7 +26,7 @@ const motionIcons = (duration)=>({
 const Skills = () => {
   return (
     <div className='bg-black max-w-full mx-auto my-auto '>
-         <motion.h1 initial={{x:-100,opacity:0}} animate={{x:0,opacity:1}} transition={{duration:0.5,delay:1}}  className='text-white text-4xl sm:text-5xl font-bold  mx-4 p-3 text-center '>TECHNICAL STACK</motion.h1>
+         <motion.h1 initial={{x:-100,opacity:0}} animate={{x:0,opacity:1}} transition={{duration:0.5,delay:1}}  className='bg-gradient-to-bl from-fuchsia-500 to-indigo-900 bg-clip-text text-transparent text-4xl sm:text-5xl font-bold  mx-4 p-3 text-center '>TECHNICAL STACK</motion.h1>
          <div className='bg-black  text-gray-300 md:h-[300px] grid grid-cols-2 md:grid-cols-5 place-items-center md:flex md:justify-between md:items-center mx-auto max-w-[1200px] '>
        
         <motion.div variants={motionIcons(10)} initial="initial" animate="animate" className='transform transition-transform duration-300 hover:scale-105 overflow-hidden shadow-lg shadow-pink-700 justify-center

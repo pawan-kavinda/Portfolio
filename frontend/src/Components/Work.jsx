@@ -26,7 +26,7 @@ const Work = () => {
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 2 }}
-          className="text-4xl  p-6 md:px-64 mb-3 md:text-6xl font-bold text-white"
+          className="text-4xl  p-6 md:px-64 mb-3 md:text-6xl font-bold bg-gradient-to-bl from-fuchsia-500 to-indigo-900 bg-clip-text text-transparent"
         >
           Projects
         </motion.p>
@@ -69,7 +69,7 @@ const Work = () => {
           className="transform transition-transform duration-300 hover:scale-105 overflow-hidden shadow-lg shadow-blue-700
          group-container rounded-d flex justify-center items-center mx-auto h-[200px] w-[200px] md:w-[400px] md:bg-gray-700 bg-cover relative"
         >
-          <Link to="/foodstore">
+          <Link to="/ai">
             {" "}
             <img
               src={ai}
@@ -85,7 +85,7 @@ const Work = () => {
           className="transform transition-transform duration-300 hover:scale-105 overflow-hidden shadow-lg shadow-blue-700
          group-container rounded-d flex justify-center items-center mx-auto h-[200px] w-[200px] md:w-[400px] md:bg-gray-700 bg-cover relative"
         >
-          <Link to="/ai">
+          <Link to="/foodstore">
             <img
               src={fs}
               layout="fill"

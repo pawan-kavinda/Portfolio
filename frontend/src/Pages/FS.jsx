@@ -10,14 +10,16 @@ const FS = () => {
         <div className="mt-[40px] bg-gray-800 p-4 md:mt-32 rounded-3xl  mx-auto overflow-hidden">
           
           <h1 className='text-gray-500 font-bold pb-8'>Technology Stack : Flutter , Firebase Database</h1>
+          <div className=" m-4 justify-center grid grid-cols-1 md:grid-cols-2 place-items-center md:flex md:items-center gap-2 mx-auto "> 
           <img
             src={react}
             layout="fill"
-            width={400}
-            height={400}
+            width={600}
+            height={600}
             objectFit="cover"
             alt=""
           />
+          </div>
           <p className="text-white text-xl md:text-2xl pb-6 md:pb-12">
             Food application designed for a restaurant, Powered by the
             combination of Flutter with Firebase database. This app seamlessly

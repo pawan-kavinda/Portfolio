@@ -1,14 +1,16 @@
 import React from "react";
 import profile from "../assets/profile.jpg";
+import about from "../assets/about.jpg";
 import { TypeAnimation } from "react-type-animation";
 import {motion} from 'framer-motion'
 import resume from '../assets/resume.pdf'
 const Hero = () => {
   return (
-    <div className=" text-center sm:text:center md:text-start grid grid-cols-1 sm:grid-cols-3 items-center gap-8 max-w-full md:h-screen mx-auto py-8 bg-black  " id="hero">
+    <div className="text-center sm:text:center md:text-start grid grid-cols-1 sm:grid-cols-3 items-center gap-8 max-w-full md:h-screen mx-auto py-8
+    bg-black " id="hero">
       <div className="col-span-1 my-auto mx-auto">
         <div className="my-auto mx-auto w-[200px] h-auto lg:w-[300px]">
-          <motion.img initial={{x:-100,opacity:0}} animate={{x:0,opacity:1}} transition={{duration:0.5,delay:0.5}}  src={profile} alt="profile image" />
+          <motion.img initial={{x:-100,opacity:0}} animate={{x:0,opacity:1}} transition={{duration:0.5,delay:0.5}}  src={about} alt="profile image" className=" rounded-3xl "/>
         </div>
 
       </div>
@@ -31,7 +33,7 @@ const Hero = () => {
             repeat={Infinity}
           ></TypeAnimation>
         </h1>
-        <motion.p initial={{x:100,opacity:0}} animate={{x:0,opacity:1}} transition={{duration:0.5,delay:0.5}} className="text-blue-500 sm:text-2xl my-3 py-3 font-bold text-2xl md:text-4xl">
+        <motion.p initial={{x:100,opacity:0}} animate={{x:0,opacity:1}} transition={{duration:0.5,delay:0.5}} className="bg-gradient-to-bl from-rose-900 to-zinc-600 bg-clip-text text-transparent sm:text-2xl my-3 py-3 font-bold text-2xl md:text-4xl">
        
             {/* I am Pawan Dissanayake, 3 rd year computer engineering undergraduate
             student in Faculty of Engineering, University of Ruhuna. I’m writing
