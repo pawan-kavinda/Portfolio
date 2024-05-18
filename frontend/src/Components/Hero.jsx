@@ -52,7 +52,7 @@ const Hero = () => {
         <div className="my-8 flex items-center justify-center md:justify-start">
           <div className="my-6">
             <a
-              href="../assets/resume.pdf"  download="Pawan_Kavinda_Dissanayake_Resume.pdf"
+              href="https://raw.githubusercontent.com/pawan-kavinda/Portfolio/main/frontend/src/assets/resume.pdf"  download="Pawan_Kavinda_Dissanayake_Resume.pdf"
               className="ml-6 px-6 py-3 w-full border border-white hover:border-collapse rounded-xl mr-4 bg-gradient-to-br from-blue-950 to bg-green-600 text-white hover:border-none">
             
                Download Resume

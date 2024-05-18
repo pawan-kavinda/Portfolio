@@ -3,6 +3,22 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import {FaLinkedin} from 'react-icons/fa'
 import {FaGithub} from 'react-icons/fa'
 import {FaInstagram} from 'react-icons/fa'
+import {motion} from 'framer-motion';
+
+const motionIcons = (duration)=>({
+  initial:{y:-10},
+  animate:{
+      y:[5,-5],
+      transition:{
+          duration:duration,
+          ease:"linear",
+          repeat:Infinity,
+          repeatType:"reverse"
+      }
+  }
+});
+
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
@@ -12,19 +28,19 @@ const Navbar = () => {
 
   return (
     <div className="bg-black h-[100px] text-xl text-white max-w-[1550px] mx-auto flex justify-between items-center px-20 fixed top-0 left-0 right-0 z-50">
-      <h1 className="text-3xl font-bold text-white ml-4">PAWAN <span className="hidden sm:hidden md:inline">KAVINDA</span></h1>
+      <h1 className="text-xl md:text-2xl font-bold text-white ml-4">PAWAN <span className="hidden sm:hidden md:inline">KAVINDA</span></h1>
       <ul className="hidden md:flex">
-        <li className="p-5">
+        <motion.li  variants={motionIcons(1)} initial="initial" animate="animate" className="p-5">
           <FaGithub className="bg-gray-500 transform w-7 h-7 transition-transform duration-300 hover:scale-105 overflow-hidden shadow-lg shadow-yellow-100"></FaGithub>
-        </li>
-        <li className="p-5">
+        </motion.li>
+        <motion.li  variants={motionIcons(5)} initial="initial" animate="animate" className="p-5">
           {/* <a href="#work">Work</a> */}
           <FaInstagram className="bg-red-800 w-7 h-7 transform transition-transform duration-300 hover:scale-105 overflow-hidden shadow-lg shadow-yellow-100"></FaInstagram>
-        </li>
-        <li className="p-5">
+        </motion.li>
+        <motion.li  variants={motionIcons(10)} initial="initial" animate="animate" className="p-5">
           {/* <a href="#contact">Contact</a> */}
           <FaLinkedin className="bg-blue-400 w-7 h-7 transform transition-transform duration-300 hover:scale-105 overflow-hidden shadow-lg shadow-yellow-100"></FaLinkedin>
-        </li>
+        </motion.li>
       </ul>
       <ul className="hidden md:flex">
         <li className="p-5">
