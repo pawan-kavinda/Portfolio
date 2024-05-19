@@ -26,8 +26,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-black h-[100px] text-xl text-white max-w-[1550px] mx-auto flex justify-between items-center px-20 fixed top-0 left-0 right-0 z-50">
-      <h1 className="text-xl md:px-8 md:text-2xl font-bold bg-gradient-to-r from-slate-200 to-orange-600 bg-clip-text text-transparent ml-4">
+    <div className="bg-black h-[100px] text-xl text-white max-w-[1550px] mx-auto flex justify-between items-center md:px-20 px-12 fixed top-0 left-0 right-0 z-50">
+      <h1 className="text-xl md:px-8 md:text-2xl font-bold bg-gradient-to-r from-slate-200 to-orange-600 bg-clip-text text-transparent">
         PAWAN <span className="hidden sm:hidden md:inline">KAVINDA</span>
       </h1>
       <ul className="hidden md:flex">
@@ -83,11 +83,11 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? " z-10 fixed h-full left-0 top-0 w-[60%] bg-black ease-in-out duration-500"
+            ? " z-10 fixed h-full left-0 top-0 w-[60%] bg-gray-800 ease-in-out duration-500"
             : "fixed left-[-100%]"
         }
       >
-        <h1 className="text-3xl primary-color m-4">Pawan Kavinda</h1>
+        <h1 className="text-3xl font-bold  bg-gradient-to-r from-slate-200 to-orange-600 bg-clip-text text-transparent m-4">Pawan Kavinda</h1>
         <ul className="p-8 text-2xl">
           <li className="p-5">
             <a href="#hero">Home</a>
@@ -103,15 +103,18 @@ const Navbar = () => {
           </li>
           <div className="flex">
             <li className="p-5">
-              <FaGithub className="bg-green-300"></FaGithub>
+            <a href="https://github.com/pawan-kavinda">
+              <FaGithub className="bg-green-300"></FaGithub></a>
             </li>
             <li className="p-5">
               {/* <a href="#work">Work</a> */}
-              <FaInstagram className="bg-red-800"></FaInstagram>
+              <a href="https://www.instagram.com/pawan_kd_9/?hl=en">
+              <FaInstagram className="bg-red-800"></FaInstagram></a>
             </li>
             <li className="p-5">
               {/* <a href="#contact">Contact</a> */}
-              <FaLinkedin className="bg-blue-400"></FaLinkedin>
+              <a href="https://www.linkedin.com/in/pawan-kavinda-6a3a37228/">
+              <FaLinkedin className="bg-blue-400"></FaLinkedin></a>
             </li>
           </div>
         </ul>
