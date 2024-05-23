@@ -68,7 +68,7 @@
 //       <ul className="hidden font-bold md:text-2xl text-xl md:flex bg-gradient-to-r from-slate-200 to-orange-600 bg-clip-text text-transparent ">
 //         <li className="p-5">
 //           <a href="#about">About</a>
-          
+
 //         </li>
 //         <li className="p-5">
 //           <a href="#work">Work</a>
@@ -199,22 +199,69 @@ const Navbar = () => {
         </a>
       </ul>
       <ul className="hidden font-bold md:text-2xl text-xl md:flex bg-gradient-to-r from-slate-200 to-orange-600 bg-clip-text text-transparent ">
-      <li className="p-5">
-          <a href="#hero" onClick={(e) => smoothScroll(e, "hero")}>Home</a>
-        </li>
-        <li className="p-5">
-          <a href="#about" onClick={(e) => smoothScroll(e, "about")}>About</a>
-        </li>
-        <li className="p-5">
-          <a href="#work" onClick={(e) => smoothScroll(e, "work")}>Work</a>
-        </li>
-        <li className="p-5">
-          <a href="#contact" onClick={(e) => smoothScroll(e, "contact")}>Contact</a>
-        </li>
-       
+        <motion.li
+          whileHover={{
+            scale: [1, 1.4, 1.2],
+            rotate: [0, 10, -10, 0],
+            transition: {
+              duration: 0.2,
+            },
+          }}
+          className="p-5"
+        >
+          <a
+            className="bg-gradient-to-r from-slate-200 to-orange-600 bg-clip-text text-transparent"
+            href="#hero"
+            onClick={(e) => smoothScroll(e, "hero")}
+          >
+            Home
+          </a>
+        </motion.li>
+       <motion.li
+          whileHover={{
+            scale: [1, 1.4, 1.2],
+            rotate: [0, 10, -10, 0],
+            transition: {
+              duration: 0.2,
+            },
+          }}
+          className="p-5"
+        >
+          <a  className="bg-gradient-to-r from-slate-200 to-orange-600 bg-clip-text text-transparent" href="#about" onClick={(e) => smoothScroll(e, "about")}>
+            About
+          </a>
+        </motion.li>
+       <motion.li
+          whileHover={{
+            scale: [1, 1.4, 1.2],
+            rotate: [0, 10, -10, 0],
+            transition: {
+              duration: 0.2,
+            },
+          }}
+          className="p-5"
+        >
+          <a  className="bg-gradient-to-r from-slate-200 to-orange-600 bg-clip-text text-transparent" href="#work" onClick={(e) => smoothScroll(e, "work")}>
+            Work
+          </a>
+        </motion.li>
+       <motion.li
+          whileHover={{
+            scale: [1, 1.4, 1.2],
+            rotate: [0, 10, -10, 0],
+            transition: {
+              duration: 0.2,
+            },
+          }}
+          className="p-5"
+        >
+          <a  className="bg-gradient-to-r from-slate-200 to-orange-600 bg-clip-text text-transparent" href="#contact" onClick={(e) => smoothScroll(e, "contact")}>
+            Contact
+          </a>
+        </motion.li>
       </ul>
       <div className="block md:hidden mx-5" onClick={handleNav}>
-        {nav ? <AiOutlineClose  size={20} /> : <AiOutlineMenu />}
+        {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu />}
       </div>
       <div
         className={
@@ -223,7 +270,9 @@ const Navbar = () => {
             : "fixed left-[-100%]"
         }
       >
-        <h1 className="text-3xl font-bold  bg-gradient-to-r from-slate-200 to-orange-600 bg-clip-text text-transparent m-4">Pawan Kavinda</h1>
+        <h1 className="text-3xl font-bold  bg-gradient-to-r from-slate-200 to-orange-600 bg-clip-text text-transparent m-4">
+          Pawan Kavinda
+        </h1>
         <ul className="p-8 text-2xl">
           <li className="p-5">
             <a href="#hero">Home</a>

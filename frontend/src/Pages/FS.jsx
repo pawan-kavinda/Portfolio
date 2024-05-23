@@ -3,8 +3,10 @@ import fs1 from "../assets/Projects/FS/fs1.jpg";
 import fs2 from "../assets/Projects/FS/fs2.jpg";
 import fs3 from "../assets/Projects/FS/fs3.jpg";
 import fs4 from "../assets/Projects/FS/fs4.jpg";
+import Animation from "../Components/Animation";
 const FS = () => {
   return (
+    <Animation>
     <div className="flex justify-center bg-black  max-w-full">
       <div className="text-center sm:text:center md:text-start grid-cols-1  items-center gap-8 md:h-full mx-auto py-8 ">
         <div className="max-w-[1200px] p-2 pt-12 text-center ">
@@ -66,6 +68,7 @@ const FS = () => {
         </div>
       </div>
     </div>
+    </Animation>
   );
 };
 

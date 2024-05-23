@@ -1,7 +1,9 @@
 import React from "react";
 import gc from "../assets/Projects/GroupChat/gc.png";
+import Animation from "../Components/Animation";
 const AI = () => {
   return (
+    <Animation>
     <div className="flex justify-center bg-black  max-w-full">
       <div className="text-center sm:text:center md:text-start grid-cols-1  items-center gap-8 md:h-full mx-auto py-8 ">
         <div className="max-w-[1200px] p-2 pt-12 text-center ">
@@ -43,6 +45,7 @@ const AI = () => {
         </div>
       </div>
     </div>
+    </Animation>
   );
 };
 

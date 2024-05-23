@@ -4,8 +4,10 @@ import mob2 from "../assets/Projects/sm/smmobile2.jpg";
 import mob3 from "../assets/Projects/sm/sm1.jpg";
 import mob4 from "../assets/Projects/sm/sm2.jpg";
 import react from "../assets/react.png";
+import Animation from "../Components/Animation";
 const SM = () => {
   return (
+    <Animation>
     <div className="flex justify-center bg-black  max-w-full">
       <div className="text-center sm:text:center md:text-start grid-cols-1  items-center gap-8 md:h-full mx-auto py-8 ">
         <div className="max-w-[1200px] p-2 pt-12 text-center ">
@@ -60,7 +62,7 @@ const SM = () => {
               password authentication. Special feature is the text alert
               function. Users can get update about ongoing sales through the app
               when they are within 200m of the store. Google map is included inside the map and it continously track user's location. Hence users can easily identify the supermarkets near the area. Once a user is registered
-              and logged in user can navigate through the products. Cart and
+              and logged in user can navigate through the products. Online payment method is integrated and customers can pay online and order products to the door steps. Cart and
               favourite function , search function, update profile function is
               there. Google map is integrated inside the application and users
               can check the store locations all over the country.
@@ -70,7 +72,7 @@ const SM = () => {
               Web Application
             </p>
             <h1 className="text-orange-400 font-bold pb-8">
-              Technology Stack : React.Js , Node.Js , Express , Firebase
+              Technology Stack : React.Js , Node.Js , Express , Firebase , Stripe payment gateway
             </h1>
             <div className=" m-4 flex justify-center">
               <img
@@ -102,6 +104,7 @@ const SM = () => {
         </div>
       </div>
     </div>
+    </Animation>
   );
 };
 

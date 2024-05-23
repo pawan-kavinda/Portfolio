@@ -37,15 +37,7 @@ const Hero = () => {
         </h1>
         <motion.p initial={{x:100,opacity:0}} animate={{x:0,opacity:1}} transition={{duration:0.5,delay:0.5}} className="bg-gradient-to-bl from-rose-900 to-zinc-600 bg-clip-text text-transparent sm:text-2xl my-3 py-3 font-bold text-2xl md:text-4xl">
        
-            {/* I am Pawan Dissanayake, 3 rd year computer engineering undergraduate
-            student in Faculty of Engineering, University of Ruhuna. I’m writing
-            this to express my interest in the six-month software engineering
-            internship at your company starting from 1st of July. I have decent
-            experience in ASP.Net and MERN stack for web development and flutter
-            for mobile development also have experience in machine learning with
-            python. Fluent in java,c# and c++ . I've attached my CV and cover
-            letter with this email.Thank you for considering my application.
-            Best regards, Pawan Dissanayake. */}
+           
             Hi , I'm Pawan Kavinda Dissanayake
          
         </motion.p>
