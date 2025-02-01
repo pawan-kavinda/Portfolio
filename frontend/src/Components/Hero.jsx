@@ -1,6 +1,6 @@
 import React from "react";
 import profile from "../assets/profile.jpg";
-import about from "../assets/about.jpg";
+import about from "../assets/dp.jpeg";
 import { TypeAnimation } from "react-type-animation";
 import {motion} from 'framer-motion'
 import resume from '../assets/resume.pdf'

@@ -2,6 +2,7 @@ import React from "react";
 import about from "../assets/abou.jpg";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import Experience from "./Experience";
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -32,7 +33,7 @@ const About = () => {
             className=" md:px-16 lg:text-lg 
           "
           >
-            I am Pawan Dissanayake, 3 rd year computer engineering undergraduate
+            I am Pawan Dissanayake, final year computer engineering undergraduate
             student in Faculty of Engineering, University of Ruhuna. A
             passionate developer dedicated to crafting innovative solutions
             through code. With a keen eye for detail and a love for
@@ -56,6 +57,7 @@ const About = () => {
           height={350}
         />
       </div>
+      <Experience/>
     </div>
   );
 };

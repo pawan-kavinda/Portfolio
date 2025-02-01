@@ -10,6 +10,9 @@ import mongo from "../assets/mongo.svg";
 import fb from "../assets/firebase.png";
 import docker from "../assets/d.png";
 import azure from "../assets/azure.jpg";
+import nest from '../assets/nest.png';
+import antd from '../assets/antd.svg';
+import semantic from '../assets/semantic.png'
 
 const motionIcons = (duration) => ({
   initial: { y: -20 },
@@ -35,7 +38,16 @@ const Skills = () => {
       >
         TECHNICAL STACK
       </motion.h1>
-      <div className="bg-black  text-gray-300 md:h-[350px] grid grid-cols-3 md:grid-cols-5 place-items-center md:flex md:justify-between md:items-center mx-auto max-w-[1250px] md:gap-0 gap-11 ">
+      <div className="bg-black  text-gray-300 md:h-[350px] grid grid-cols-3 lg:grid-cols-2 place-items-center md:flex md:justify-between md:items-center mx-auto max-w-[1250px] md:gap-0 gap-5 ">
+       <motion.div
+          variants={motionIcons(10)}
+          initial="initial"
+          animate="animate"
+          className="transform transition-transform duration-300 hover:scale-105 overflow-hidden shadow-lg shadow-pink-700 justify-center
+         group-container flex flex-col items-center m-4 sm:my-0 md:rounded-2xl md:border-4 border-neutral-800 border-2 rounded-xl h-[100px] md:h-[120px] w-[100px] md:w-[120px]"
+        >
+          <img src={nest} width={100} height={100} alt="" />
+        </motion.div>
         <motion.div
           variants={motionIcons(10)}
           initial="initial"
@@ -53,6 +65,24 @@ const Skills = () => {
          group-container flex flex-col items-center m-4 sm:my-0 md:rounded-2xl md:border-4 border-neutral-800 border-2 rounded-xl h-[100px]  md:h-[120px] w-[100px] md:w-[120px]"
         >
           <img src={flutter} width={100} height={100} alt="" />
+        </motion.div>
+        <motion.div
+          variants={motionIcons(1)}
+          initial="initial"
+          animate="animate"
+          className="transform transition-transform duration-300 hover:scale-105 overflow-hidden shadow-lg shadow-pink-700 justify-center
+         group-container flex flex-col items-center m-4 sm:my-0 md:rounded-2xl md:border-4 border-neutral-800 border-2 rounded-xl h-[100px]  md:h-[120px] w-[100px] md:w-[120px]"
+        >
+          <img src={antd} width={100} height={100} alt="" />
+        </motion.div>
+        <motion.div
+          variants={motionIcons(1)}
+          initial="initial"
+          animate="animate"
+          className="transform transition-transform duration-300 hover:scale-105 overflow-hidden shadow-lg shadow-pink-700 justify-center
+         group-container flex flex-col items-center m-4 sm:my-0 md:rounded-2xl md:border-4 border-neutral-800 border-2 rounded-xl h-[100px]  md:h-[120px] w-[100px] md:w-[120px]"
+        >
+          <img src={semantic} width={100} height={100} alt="" />
         </motion.div>
         <motion.div
           variants={motionIcons(20)}
