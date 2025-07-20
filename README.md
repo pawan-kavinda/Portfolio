@@ -34,7 +34,7 @@ A modern, responsive, and fast personal portfolio website built with **React**. 
 ### Installation
 
 ```bash
-git clone [https://github.com/pawan-kavinda/Portfolio.git](https://github.com/pawan-kavinda/Portfolio.git)
+git clone https://github.com/pawan-kavinda/Portfolio.git
 cd frontend
 npm install
 npm run dev
