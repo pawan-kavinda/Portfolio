@@ -12,7 +12,9 @@ import AI from "./Pages/AI";
 import SM from "./Pages/SM";
 import EMS from "./Pages/EMS";
 import FS from "./Pages/FS";
+import Takso from "./Pages/Takso";
 import {useRef,useEffect } from "react";
+import Dialog from "./Pages/Dialog";
 
 
 function App() {
@@ -27,6 +29,10 @@ function App() {
           <Route path="/ems" element={<EMS />} />
           <Route path="/groupchat" element={<GC />} />
           <Route path="/foodstore" element={<FS />} />
+          <Route path="/takso" element={<Takso />} />
+          <Route path="/dialog-genie" element={<Dialog />} />
+          <Route path="/podi-business" element={<SM />} />
+          <Route path="/clean-control" element={<SM />} />
         </Routes>
       </div>
     </BrowserRouter>
