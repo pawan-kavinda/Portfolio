@@ -21,7 +21,7 @@ function App() {
   return (
     <BrowserRouter  scrollRestoration="auto">
       <div>
-        {/* Main Routes */}
+    
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/ai" element={<AI />} />
