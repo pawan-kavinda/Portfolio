@@ -34,7 +34,7 @@ pipeline {
 
         stage('Run Container') {
             steps {
-                sh '''
+                bat '''
                 docker stop react-frontend || true
                 docker rm react-frontend || true
                 docker run -d --name react-frontend -p 80:80 ${DOCKER_IMAGE}:latest
