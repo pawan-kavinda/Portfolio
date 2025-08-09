@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'yourdockerhubusername/react-frontend'
+        DOCKER_IMAGE = 'pawankavinda/portfolio'
     }
 
     stages {
@@ -25,7 +25,7 @@ pipeline {
         stage('Push Docker Image') {
             steps {
                 script {
-                    docker.withRegistry('', 'dockerhub-credentials-id') {
+                    docker.withRegistry('', '8c3e03d9-a7e1-428b-9947-2edfd5f9ade6d') {
                         dockerImage.push()
                     }
                 }
