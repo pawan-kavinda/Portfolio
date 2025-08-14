@@ -4,70 +4,78 @@ import fs2 from "../assets/Projects/FS/fs2.jpg";
 import fs3 from "../assets/Projects/FS/fs3.jpg";
 import fs4 from "../assets/Projects/FS/fs4.jpg";
 import Animation from "../Components/Animation";
+
 const FS = () => {
+  const keyPoints = [
+    "User-friendly mobile app for restaurant food management.",
+    "Built with Flutter and Firebase for smooth performance and real-time updates.",
+    "Cart, Wishlist functionality for easy item management.",
+    "Displays clear pricing and updates for menu items.",
+    "Responsive and visually appealing UI for both customers and admins.",
+    "Helps users track price changes and restaurant offerings easily.",
+  ];
+
+  const images = [fs4, fs1, fs3, fs2];
+
   return (
     <Animation>
-    <div className="flex justify-center bg-black  max-w-full">
-      <div className="text-center sm:text:center md:text-start grid-cols-1  items-center gap-8 md:h-full mx-auto py-8 ">
-        <div className="max-w-[1200px] p-2 pt-12 text-center ">
-          <p className="text-3xl sm:text-4xl mx-auto mb-3 md:mb-10 md:text-6xl font-bold bg-gradient-to-bl from-fuchsia-500 to-indigo-900 bg-clip-text text-transparent">
+      <section className="bg-black py-20 px-6 flex justify-center">
+        <div className="max-w-7xl w-full text-center md:text-left">
+          {/* Heading */}
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold bg-gradient-to-bl from-fuchsia-500 to-indigo-900 bg-clip-text text-transparent mb-12">
             FOOD STORE MOBILE APPLICATION
-          </p>
-          <div className="mt-[40px] bg-gray-800 p-4 md:mt-32 rounded-3xl  mx-auto overflow-hidden">
-            <h1 className="text-orange-400 font-bold pb-8">
-              Technology Stack : Flutter , Firebase Database
-            </h1>
-            <div className=" m-4 justify-center grid grid-cols-2 md:grid-cols-2 place-items-center md:flex md:items-center gap-2 md:gap-6 mx-auto "> 
-              <img
-                src={fs4}
-                layout="fill"
-                width={200}
-                height={200}
-                objectFit="cover"
-                alt=""
-              />
-               <img
-                src={fs1}
-                layout="fill"
-                width={200}
-                height={200}
-                objectFit="cover"
-                alt=""
-              />
-               <img
-                src={fs3}
-                layout="fill"
-                width={200}
-                height={200}
-                objectFit="cover"
-                alt=""
-              />
-               <img
-                src={fs2}
-                layout="fill"
-                width={200}
-                height={200}
-                objectFit="cover"
-                alt=""
-              />
-            </div>
-           
-             
-            <p className="text-white text-xl md:text-2xl pb-6 md:pb-12">
-              Food application designed for a restaurant, Powered by the
-              combination of Flutter with Firebase database. This app seamlessly
-              integrates a user-friendly interface with robust functionality
-              ensuring a delightful experience for both restaurant
-              administrators and users alike. This helps for customers to see
-              and get a clear idea about the food prices and they can be in
-              updated about the price changes of the restaurant. Admin and user
-              role based authentication system gives access to different areas.
+          </h1>
+
+          {/* Card */}
+          <div className="bg-gray-900/80 backdrop-blur-md rounded-3xl shadow-2xl p-10 border border-gray-800">
+            {/* Technology Stack */}
+            <h2 className="text-orange-400 text-2xl font-bold mb-6">
+              Technology Stack
+            </h2>
+            <p className="text-gray-200 text-lg mb-10">
+              Flutter, Firebase Database
             </p>
-            <a className="text-blue-600 p-3" href=" https://github.com/pawan-kavinda/Flutter-Food-Application.git">https://github.com/pawan-kavinda/Flutter-Food-Application.git</a> 
+
+            {/* Image Gallery */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+              {images.map((img, index) => (
+                <img
+                  key={index}
+                  src={img}
+                  alt={`Food Store ${index + 1}`}
+                  className="w-full object-cover rounded-2xl shadow-lg border border-gray-700 hover:scale-105 transition transform duration-300"
+                />
+              ))}
+            </div>
+
+            {/* Description */}
+            <p className="text-gray-200 text-lg md:text-xl leading-relaxed mb-6">
+              Food application designed for a restaurant, powered by Flutter and
+              Firebase. Provides a seamless interface for both customers and
+              administrators. Customers can view menu items, prices, and updates
+              easily, while admin users manage menu items and prices
+              efficiently.
+            </p>
+
+            {/* Key Points */}
+            <ul className="list-disc list-inside text-gray-200 space-y-2 text-lg md:text-xl mb-6">
+              {keyPoints.map((point, index) => (
+                <li key={index}>{point}</li>
+              ))}
+            </ul>
+
+            {/* GitHub Link */}
+            <a
+              href="https://github.com/pawan-kavinda/Flutter-Food-Application.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition transform hover:scale-105"
+            >
+              View on GitHub
+            </a>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
     </Animation>
   );
 };

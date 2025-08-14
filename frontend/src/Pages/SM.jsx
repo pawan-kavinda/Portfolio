@@ -5,130 +5,77 @@ import mob3 from "../assets/Projects/sm/sm1.jpg";
 import mob4 from "../assets/Projects/sm/sm2.jpg";
 import react from "../assets/react.png";
 import Animation from "../Components/Animation";
+
 const SM = () => {
+  const mobileFeatures = [
+    "Google authentication",
+    "Firebase Firestore email/password login",
+    "Text alerts for ongoing sales within 200m",
+    "Continuous Google Maps location tracking",
+    "Online payment integration",
+    "Cart and favorites functionality",
+    "Search functionality",
+    "Profile management",
+    "Store location mapping across the country",
+  ];
+
   return (
     <Animation>
-    <div className="flex justify-center bg-black  max-w-full">
-      <div className="text-center sm:text:center md:text-start grid-cols-1  items-center gap-8 md:h-full mx-auto py-8 ">
-        <div className="max-w-[1200px] p-2 pt-12 text-center ">
-          <p className="text-3xl sm:text-4xl mx-auto mb-3 md:mb-5 md:text-6xl font-bold bg-gradient-to-bl from-fuchsia-500 to-indigo-900 bg-clip-text text-transparent">
-            LUXEMART SUPER MARKET APPLICATION
-          </p>
-          <div className="mt-[40px] bg-gray-700 px-4 py-8 md:mt-20 rounded-3xl mx-auto overflow-hidden">
-            <p className="text-2xl md:text-3xl text-white font-bold pb-4">
-              Mobile App
-            </p>
-            <h1 className="text-orange-400 font-bold pb-8">
-              Technology Stack : Flutter , Firebase Database , Google Maps ,
-              Firestore Cloud Messaging
+      <section className="bg-black py-20 px-6">
+        <div className="max-w-7xl mx-auto text-white">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold bg-gradient-to-br from-fuchsia-500 via-purple-500 to-indigo-900 bg-clip-text text-transparent">
+              LUXEMART SUPER MARKET APPLICATION
             </h1>
-
-            <div className=" m-4 justify-center grid grid-cols-2 md:grid-cols-2 place-items-center md:flex md:items-center gap-2 md:gap-6 mx-auto ">
-              <img
-                src={mob}
-                layout="fill"
-                width={200}
-                height={200}
-                objectFit="cover"
-                alt=""
-              />
-              <img
-                src={mob2}
-                layout="fill"
-                width={200}
-                height={200}
-                objectFit="cover"
-                alt=""
-              />
-               <img
-                src={mob3}
-                layout="fill"
-                width={200}
-                height={200}
-                objectFit="cover"
-                alt=""
-              />
-              <img
-                src={mob4}
-                layout="fill"
-                width={200}
-                height={200}
-                objectFit="cover"
-                alt=""
-              />
-            </div>
-            <p className="text-white text-md md:text-lg pb-6 md:pb-12">
-              Provides Google authentication and Firebase firestore email and
-              password authentication. Special feature is the text alert
-              function. Users can get update about ongoing sales through the app
-              when they are within 200m of the store. Google map is included inside the map and it continously track user's location. Hence users can easily identify the supermarkets near the area. Once a user is registered
-              and logged in user can navigate through the products. Online payment method is integrated and customers can pay online and order products to the door steps. Cart and
-              favourite function , search function, update profile function is
-              there. Google map is integrated inside the application and users
-              can check the store locations all over the country.
-            </p>
-
-            <p className="text-2xl md:text-3xl text-white font-bold pb-4">
-              Web Application
-            </p>
-            <h1 className="text-orange-400 font-bold pb-8">
-              Technology Stack : React.Js , Node.Js , Express , Firebase , Stripe payment gateway
-            </h1>
-            <div className=" m-4 flex justify-center">
-              <img
-                src={react}
-                layout="fill"
-                width={400}
-                height={400}
-                objectFit="cover"
-                alt=""
-              />
-            </div>
-            <p className="text-white text-md md:text-lg">
-              Provides Google authentication and Firebase firestore email and
-              password authentication. Special feature is the text alert
-              function. Users can get update about ongoing sales through the app
-              when they are within 200m of the store. Once a user is registered
-              and logged in user can navigate through the products. Cart and
-              favourite function , search function, update profile function is
-              there. Google map is integrated inside the application and users
-              can check the store locations all over the country.
-            </p>
-            <a
-              className="text-blue-600 p-3"
-              href=" https://github.com/pawan-kavinda/SuperMarket_project.git"
-            >
-              https://github.com/pawan-kavinda/SuperMarket_project.git
-            </a>
           </div>
+
+          {/* Mobile App Section */}
+          <div className="backdrop-blur-lg bg-gray-900/60 rounded-3xl p-8 md:p-12 shadow-xl border border-gray-800 mb-16">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+              Mobile App
+            </h2>
+            <p className="text-orange-400 font-semibold mb-6">
+              Technology Stack: Flutter, Firebase Database, Google Maps,
+              Firestore Cloud Messaging
+            </p>
+
+            {/* Mobile Images */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+              {[mob, mob2, mob3, mob4].map((img, idx) => (
+                <div
+                  key={idx}
+                  className="overflow-hidden rounded-2xl shadow-lg"
+                >
+                  <img
+                    src={img}
+                    alt={`Mobile Screenshot ${idx + 1}`}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+
+            {/* Mobile Features */}
+            <ul className="text-gray-200 text-lg leading-relaxed list-disc list-inside space-y-2 mb-6">
+              {mobileFeatures.map((feature, index) => (
+                <li key={index}>{feature}</li>
+              ))}
+            </ul>
+          </div>
+
+          <a
+            href="https://github.com/pawan-kavinda/SuperMarket_project.git"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transform transition duration-300 text-white"
+          >
+            View GitHub Repository
+          </a>
         </div>
-      </div>
-    </div>
+      </section>
     </Animation>
   );
 };
 
 export default SM;
-
-{
-  /* <div className=" m-4 flex justify-center "> 
-<img
-  
-  src={react}
-  layout="fill"
-   width={300}
-   height={300}
-  objectFit="cover"
-  alt=""
-/>
-      <img
- 
- src={react}
- layout="fill"
-  width={300}
-  height={300}
- objectFit="cover"
- alt=""
-/>
-</div> */
-}
