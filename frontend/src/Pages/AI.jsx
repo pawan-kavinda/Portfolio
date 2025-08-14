@@ -1,52 +1,63 @@
 import React from "react";
-import ml from "../assets/ml.jpg";
+import ml from "../assets/ml.png";
 import Animation from "../Components/Animation";
+
 const AI = () => {
+  const keyPoints = [
+    "Predicts mobile phone price based on features using machine learning.",
+    "Implemented Linear Regression and Decision Tree algorithms.",
+    "Achieved ~90% prediction accuracy.",
+    "Dataset sourced from Kaggle; extensive preprocessing applied.",
+    "Categorical data converted to numerical via one-hot encoding.",
+    "Missing values filled using median imputation.",
+    "Testing and deployment completed; live demo available online.",
+  ];
+
   return (
     <Animation>
-    <div className="flex justify-center bg-black  max-w-full">
-      <div className="text-center sm:text:center md:text-start grid-cols-1  items-center gap-8 md:h-full mx-auto py-8 ">
-        <div className="max-w-[1200px] p-2 pt-12 text-center ">
-          <p className="text-3xl sm:text-4xl mx-auto mb-3 md:mb-10 md:text-6xl font-bold bg-gradient-to-bl from-fuchsia-500 to-indigo-900 bg-clip-text text-transparent">
+      <section className="bg-black py-20 px-6 flex justify-center">
+        <div className="max-w-7xl w-full text-center md:text-left">
+          {/* Heading */}
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold bg-gradient-to-bl from-fuchsia-500 to-indigo-900 bg-clip-text text-transparent mb-12">
             MACHINE LEARNING MOBILE PHONE PRICE PREDICTOR
-          </p>
-          <div className="mt-[40px] bg-gray-800 p-4 md:mt-32 rounded-3xl  mx-auto overflow-hidden">
-            <h1 className="text-orange-400 font-bold pb-8">
-              Technology Stack : Python , Numpy, Decision Tree , Linear
-              Regression
-            </h1>
-            <div className=" m-4 justify-center grid grid-cols-1 md:grid-cols-2 place-items-center md:flex md:items-center gap-2 mx-auto ">
+          </h1>
+
+          {/* Card */}
+          <div className="bg-gray-900/80 backdrop-blur-md rounded-3xl shadow-2xl p-10 border border-gray-800">
+            {/* Technology Stack */}
+            <h2 className="text-orange-400 text-2xl font-bold mb-6">
+              Technology Stack
+            </h2>
+            <p className="text-gray-200 text-lg mb-10">
+              Python, NumPy, Decision Tree, Linear Regression
+            </p>
+
+            {/* Image & Description */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-10">
               <img
                 src={ml}
-                layout="fill"
-                width={600}
-                height={600}
-                objectFit="cover"
-                alt=""
+                alt="Mobile Price Predictor"
+                className="w-full rounded-2xl shadow-lg border border-gray-700 object-cover"
               />
+              <div>
+                <p className="text-gray-200 text-lg md:text-xl leading-relaxed mb-6">
+                  Predicts the price of a mobile phone by entering its features.
+                  Linear Regression and Decision Tree algorithms are used for
+                  modeling, with preprocessing applied to a messy Kaggle dataset
+                  to improve accuracy.
+                </p>
+
+                {/* Key Points */}
+                <ul className="list-disc list-inside text-gray-200 space-y-2 text-lg md:text-xl mb-6">
+                  {keyPoints.map((point, index) => (
+                    <li key={index}>{point}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
-            <p className="text-white text-xl md:text-2xl pb-6 md:pb-12">
-              Mobile phone price predictor using machine learning is built to
-              predict the price of a mobile phone by entering the features of
-              it. I have use both linear regression and decision tree methods
-              for build this. This gave around 90% accuracy of predicting. I
-              have chosen the dataset from "Kaggle" website. Preprocessing part,
-              Testing part and deployment parts have been finished. Chosen
-              dataset is bit messy and huge pre processing steps had to be
-              carried out. Here I used one hot encoding for categorical data to
-              numerical data conversion and missing values were filled using the
-              median.
-              <a
-                className="text-blue-400  font-bold"
-                href="https://mobilepricepredictor2023uor-2f7df20961de.herokuapp.com/"
-              >
-                Visit here
-              </a>
-            </p>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
     </Animation>
   );
 };

@@ -1,45 +1,75 @@
 import React from "react";
 import ems from "../assets/Projects/ems.jpg";
 import Animation from "../Components/Animation";
+
 const EMS = () => {
   return (
     <Animation>
-    <div className="flex justify-center bg-black  max-w-full">
-      <div className="text-center sm:text:center md:text-start grid-cols-1  items-center gap-8 md:h-full mx-auto py-8 ">
-        <div className="max-w-[1200px] p-2 pt-12 text-center ">
-          <p className="text-3xl sm:text-4xl mx-auto mb-3 md:mb-10 md:text-6xl font-bold bg-gradient-to-bl from-fuchsia-500 to-indigo-900 bg-clip-text text-transparent">
+      <section className="bg-black py-20 px-6 flex justify-center">
+        <div className="max-w-7xl w-full text-center md:text-left">
+          {/* Heading */}
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold bg-gradient-to-bl from-fuchsia-500 to-indigo-900 bg-clip-text text-transparent mb-12">
             EMPLOYEE MANAGEMENT SYSTEM
-          </p>
-          <div className="mt-[40px] bg-gray-800 p-4 md:mt-32 rounded-3xl  mx-auto overflow-hidden">
-            <h1 className="text-orange-400 font-bold pb-8">
-              Technology Stack : ASP.Net, Entity Framework, SQLite Database
-            </h1>
-            <div className=" m-4 justify-center grid grid-cols-1 md:grid-cols-2 place-items-center md:flex md:items-center gap-2 mx-auto ">
+          </h1>
+
+          {/* Card */}
+          <div className="bg-gray-900/80 backdrop-blur-md rounded-3xl shadow-2xl p-10 border border-gray-800">
+            {/* Technology Stack */}
+            <h2 className="text-orange-400 text-2xl font-bold mb-6">
+              Technology Stack
+            </h2>
+            <p className="text-gray-200 text-lg mb-10">
+              ASP.Net MVC, Entity Framework Core, SQLite Database
+            </p>
+
+            {/* Image & Description */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-10">
               <img
                 src={ems}
-                layout="fill"
-                width={600}
-                height={600}
-                objectFit="cover"
-                alt=""
+                alt="Employee Management System"
+                className="w-full rounded-2xl shadow-lg border border-gray-700 object-cover"
               />
+              {/* Key Points Section */}
+              <div className="mt-10 bg-gray-800/70 p-6 rounded-2xl border border-gray-700 shadow-lg">
+                <h2 className="text-orange-400 text-2xl font-bold mb-4">
+                  Key Points
+                </h2>
+                <ul className="list-disc list-inside text-gray-200 space-y-2 text-lg md:text-xl">
+                  <li>Web application built using ASP.Net MVC architecture.</li>
+                  <li>Employee management with full CRUD operations.</li>
+                  <li>Admin authentication and secure dashboard access.</li>
+                  <li>
+                    SQLite database integrated with Entity Framework Core.
+                  </li>
+                  <li>
+                    Responsive and user-friendly interface with smooth
+                    navigation.
+                  </li>
+                  <li>
+                    Includes Home, About, Login, Signup, Admin Dashboard, and
+                    Profile pages.
+                  </li>
+                  <li>
+                    Clean and modern UI with shadowed cards and gradient
+                    headings.
+                  </li>
+                  <li>Hosted on GitHub for easy access and collaboration.</li>
+                </ul>
+              </div>
             </div>
-            <p className="text-white text-xl md:text-2xl pb-6 md:pb-12">
-              Web Application for managing employees built using ASP.Net MVC
-              architecture with Microsoft Entity Framework core and SQLite
-              database is used as the main database. This provide admin side
-              management operations with authentication. After logged as an
-              admin, it can do all the CRUD operations for employees. Consist
-              with eye-catching user interfaces and provides smooth navigation
-              between pages. Admins can do their operations through admin
-              dashboard. Consist with Home page, about page , login and sign up
-              page, admin dashboard, admin profile page.
-            </p>
-            <a className="text-blue-600 p-3" href="https://github.com/pawan-kavinda/Employee-Management-System-Project.git">https://github.com/pawan-kavinda/Employee-Management-System-Project.git</a> 
+
+            {/* GitHub Link */}
+            <a
+              href="https://github.com/pawan-kavinda/Employee-Management-System-Project.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition transform hover:scale-105"
+            >
+              View on GitHub
+            </a>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
     </Animation>
   );
 };

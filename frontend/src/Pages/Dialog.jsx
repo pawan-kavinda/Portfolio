@@ -1,60 +1,85 @@
 import React from "react";
-import gc from "../assets/Projects/GroupChat/gc.png";
+import genie from "../assets/genie.png";
 import Animation from "../Components/Animation";
+import { CheckCircleIcon } from "@heroicons/react/24/solid";
 
 const Dialog = () => {
+const highlights = [
+    "Application consist with mobile application, web based admin portal and a common backend.",
+    "I have worked with web application development and the backend development relavent to both mobile and web portals",
+    "Handled bug fixing, new feature development, enhancements and all the development tasks 100% by myself after 2 weeks of project onboarding",
+    "Collaborated closely with the mobile development team to deliver backend functionalities aligned with application requirements.",
+    "Implemented custom migration system for MongoDB",
+    "Addressed key security vulnerabilities (XSS, brute-force, injection) with robust sanitization, rate limiting, and validation",
+    "Loan approval process manualization feature implementation",
+    "FTP file server integration ",
+    "Integrated SMS functionality according to dialog documentation",
+    "Handled Base64 images for optimized and efficient file receive process",    
+    "Managed releases through JIRA boards, Confluence notes, and Git PRs across environments",
+    "Fixed UI/UX issues to enhance user experience and accessibility",
+    "Analyzed the best Docker base images for minimum vulnerabilities and package supportability",
+    "Authored user stories, technical documentation, and flowcharts"
+  ];
+
   return (
     <Animation>
-      <div className="bg-black py-16 px-4">
-        <div className="max-w-6xl mx-auto text-white">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-center bg-gradient-to-bl from-fuchsia-500 to-indigo-900 bg-clip-text text-transparent">
-            Dialog Genie Loan Application
-          </h1>
-
-          <p className="mt-4 text-center text-gray-300 text-lg max-w-3xl mx-auto">
-            Dialog Genie Application is a digital platform designed to streamline the process of applying for and managing loans
-          </p>
-
-          <div className="mt-12 bg-gray-900 rounded-3xl p-6 md:p-10">
-            <h2 className="text-orange-400 text-xl font-semibold mb-6">
-              Technologies Used : React.js, NestJs, MongoDB, React Queries
-            </h2>
-
-            <div className="flex justify-center mb-10">
-              <img
-                src={gc}
-                alt="Takso Application Screenshot"
-                className="w-full max-w-md rounded-lg shadow-lg object-cover"
-              />
-            </div>
-
-            <div className="text-gray-200 text-base md:text-lg space-y-4">
-              <p>✔️ Handled bug fixing, new feature development, enhancements and all the development tasks 100% by myself after 2 weeks of project onboarding</p>
-              <p>✔️ Implemented custom migration system for mongodb</p>
-              <p>✔️ Manualized the loan approval process</p>
-              <p>✔️ Changed file server from s3 bucket into FTP private file server</p>
-              <p>✔️ Integrated sms functionality by investigating given documentation and curl requests by dialog</p>
-              <p>✔️ Handled Base64 images for optimized and efficient file receive process</p>
-              <p>✔️ Addressed key security vulnerabilities such as xss attacks, brute-force attacks and injection flaws by implementing robust input sanitization, API rate limiting, and request validation mechanisms to safeguard endpoints and application integrity.</p>
-              <p>✔️ Managed releases through JIRA boards, Confluence notes, and Git PRs across environments.</p>
-              <p>✔️ Fixed UI/UX issues to enhance user experience and accessibility.</p>
-              <p>✔️ Analyze the best Docker base images for minimum security vulnerabilities and package supportability</p>
-              <p>✔️ Authored user stories, technical documentation, and flowcharts</p>
-            </div>
-
-            <div className="mt-8 text-center">
+      <section className="bg-black py-20 px-6">
+        <div className="max-w-7xl mx-auto text-white">
+          {/* Hero Section */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+            <div className="space-y-6">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-fuchsia-500 via-purple-500 to-indigo-900 bg-clip-text text-transparent">
+                Dialog Genie Loan Application
+              </h1>
+              <p className="text-lg text-gray-300 leading-relaxed">
+                A modern digital platform designed to streamline loan application and management
+                with secure, scalable, and efficient features.
+              </p>
               <a
-                href="https://github.com/pawan-kavinda/Network_Programming_Group_Chat_Application.git"
+                href="https://www.genie.lk/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-400 font-semibold underline hover:text-blue-300 transition"
+                className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-purple-500/50 hover:scale-105 transform transition duration-300"
               >
-                View GitHub Repository
+                View Application
               </a>
+            </div>
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-tr from-fuchsia-500/30 to-indigo-900/30 rounded-3xl blur-3xl"></div>
+              <img
+                src={genie}
+                alt="Dialog Genie Loan Application"
+                className="relative w-full rounded-2xl shadow-2xl border border-gray-800"
+              />
+            </div>
+          </div>
+
+          {/* Details Section */}
+          <div className="backdrop-blur-lg bg-gray-900/60 rounded-3xl p-10 shadow-xl border border-gray-800">
+            <h2 className="text-orange-400 text-2xl font-semibold mb-6">
+              Technologies Worked With
+            </h2>
+            <p className="text-lg text-gray-300 mb-10">
+              React.js, NestJS, MongoDB, React Query, Docker, SMTP, FTP
+            </p>
+
+            <h2 className="text-orange-400 text-2xl font-semibold mb-6">
+              Key Highlights
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {highlights.map((item, index) => (
+                <div
+                  key={index}
+                  className="flex items-start space-x-3 p-4 bg-gray-800/60 rounded-xl border border-gray-700 hover:border-fuchsia-500 transition duration-200"
+                >
+                  <CheckCircleIcon className="w-6 h-6 text-green-400 flex-shrink-0" />
+                  <span className="text-gray-200">{item}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </Animation>
   );
 };
