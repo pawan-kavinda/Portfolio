@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import experience from "../assets/experience.jpeg";
+import experience from "../assets/beta.jpeg";
 import { motion } from "framer-motion";
 
 const Experience = () => {
@@ -19,7 +19,7 @@ const Experience = () => {
           transition={{ duration: 0.5, delay: 1.5 }}
           className="mx-auto my-auto rounded-3xl py-10 md:py-0"
           src={experience}
-          width={350}
+          width={550}
           height={350}
         />
         <div className="my-auto mx-6">
@@ -39,7 +39,7 @@ const Experience = () => {
             transition={{ duration: 0.5, delay: 1 }}
             className="md:px-16 lg:text-lg"
           >
-            I'm currently working as a full stack developer at Beta Launch. During this period
+            Currently working as a full stack developer at Beta Launch (First 6 months as an Intern software engineer and after that as an Associate software engineer). During this period
             I've been able to develop my knowledge on various design patterns, project
             management, delivery and deployment processes, etc. Currently, I'm contributing
             to multiple active projects.
