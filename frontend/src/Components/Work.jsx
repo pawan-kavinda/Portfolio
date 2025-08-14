@@ -16,23 +16,40 @@ import voting from "../assets/voting.png";
 import pf from "../assets/Projects/pf.png";
 import em from "../assets/Projects/em.jpg";
 
-// Reusable Project Card
 const ProjectCard = ({ to, imageSrc, alt, category }) => {
   return (
-    <div className="relative group rounded-2xl overflow-hidden shadow-2xl transform transition duration-300 hover:scale-105">
+    <div className="group relative rounded-2xl overflow-hidden shadow-2xl transform transition duration-300 hover:scale-105">
       {to ? (
-        <Link to={to}>
+        <Link to={to} className="block w-full h-full relative">
           <img src={imageSrc} alt={alt} className="w-full h-64 object-cover" />
+          {category && (
+            <span className="text-xs md:text-sm px-2 py-1 bg-blue-600 rounded mt-2">
+              {category}
+            </span>
+          )}
+
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <p className="text-white font-bold text-lg md:text-xl text-center px-2">
+              {alt}
+            </p>
+          </div>
         </Link>
       ) : (
-        <img src={imageSrc} alt={alt} className="w-full h-64 object-cover" />
+        <>
+          <img src={imageSrc} alt={alt} className="w-full h-64 object-cover" />
+          <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <p className="text-white font-bold text-lg md:text-xl text-center px-2">
+              {alt}
+            </p>
+            {category && (
+              <span className="text-xs md:text-sm px-2 py-1 bg-blue-600 rounded mt-2">
+                {category}
+              </span>
+            )}
+          </div>
+        </>
       )}
-      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-transparent to-transparent p-4">
-        <p className="text-white font-bold text-lg md:text-xl">{alt}</p>
-        <span className="text-xs md:text-sm px-2 py-1 bg-blue-600 rounded mt-2 inline-block">
-          {category}
-        </span>
-      </div>
     </div>
   );
 };
@@ -42,40 +59,76 @@ const Work = () => {
     {
       category: "Web",
       items: [
-        { to: "/takso", image: takso, name: "Takso Application" },
-        { to: "/dialog-genie", image: genie, name: "Dialog Genie Application" },
+        {
+          to: "/takso",
+          image: takso,
+          name: "Takso Application",
+          category: "ReactJS + ExpressJS",
+        },
+        {
+          to: "/dialog-genie",
+          image: genie,
+          name: "Dialog Genie Application",
+          category: "ReactJS + NestJS",
+        },
         {
           to: "/podi-business",
           image: podi,
           name: "Podi Business Application",
+          category: "ReactJS + NestJS",
         },
-        { to: "/agent-ai", image: agent, name: "Agent AI Application" },
-        { to: "/supermarket", image: sm, name: "Supermarket Application" },
-        { to: "/ems", image: em, name: "EMS Application" },
+        {
+          to: "/agent-ai",
+          image: agent,
+          name: "Agent AI Application",
+          category: "Flutter",
+        },
+
+        {
+          to: "/ems",
+          image: em,
+          name: "EMS Application",
+          category: "ASP .NET",
+        },
       ],
     },
     {
       category: "Mobile",
       items: [
-        { to: "/foodstore", image: fs, name: "Food Store Application" },
-        { image: pf, name: "Portfolio Application" },
+        {
+          to: "/foodstore",
+          image: fs,
+          name: "Food Store Application",
+          category: "Flutter",
+        },
+        ,
+        {
+          to: "/podi-business",
+          image: podi,
+          name: "Podi Business Application",
+          category: "React Native",
+        },
+        {
+          to: "/supermarket",
+          image: sm,
+          name: "Supermarket Application",
+          category: "Flutter",
+        },
       ],
     },
     {
-      category: "AI & ML",
+      category:
+        "AI, ML & Cryptography Related Applications and Other Applications",
       items: [
-        { to: "/ai", image: ai, name: "Mobile Phone Price Predictor" },
-        { to: "/groupchat", image: gc, name: "Multi Threaded Group Chat" },
-      ],
-    },
-    {
-      category: "Cryptography & Security",
-      items: [
+        { to: "/groupchat", image: gc, name: "Multi Threaded Group Chat", category:"Java Multi Threaded" },
+        { to: "/agent-ai", image: agent, name: "Agent AI Application", category:"AI" },
         {
           to: "/voting-system",
           image: voting,
           name: "Voting System Using Cryptography",
+          category: "Cryptography",
         },
+        { to: "/ai", image: ai, name: "Mobile Phone Price Predictor", category: "ML" },
       ],
     },
   ];
@@ -103,7 +156,7 @@ const Work = () => {
                 to={project.to}
                 imageSrc={project.image}
                 alt={project.name}
-                category={section.category}
+                category={project.category}
               />
             ))}
           </div>
