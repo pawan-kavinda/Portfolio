@@ -57,7 +57,7 @@ const About = () => {
           height={350}
         />
       </div>
-      <Experience/>
+   
     </div>
   );
 };

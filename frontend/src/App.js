@@ -2,7 +2,9 @@ import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import Skills from "./Components/Skills";
 import About from "./Components/About";
+import Experience from "./Components/Experience";
 import Work from "./Components/Work";
+import ExtraCurricular from "./Components/ExtraCurricular";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import Education from "./Components/Education";
@@ -52,8 +54,10 @@ function MainPage() {
       <Hero />
       <Skills />
       <About />
+      <Experience />
       <Work />
       <Education />
+      <ExtraCurricular />
       <Contact />
       <Footer />
     </div>
