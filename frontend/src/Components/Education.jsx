@@ -22,7 +22,7 @@ const Education = () => {
         <motion.div initial={{x:100,opacity:0}} animate={{x:0,opacity:1}} transition={{duration:0.5,delay:2}}  className='mb-[20px] bg-gray-800 p-4 rounded-3xl max-w-[600px] mx-auto hover:shadow-none overflow-hidden shadow-lg shadow-green-700'>
             <p className='text-xl md:text-3xl'>G.C.E Ordinary Level</p>
             <p className='text-gray-600'>Central College Anuradhapura(2015)</p>
-            <p className='text-gray-300'>9A's and 1B</p>
+            <p className='text-gray-300'>8A's and 1B</p>
         </motion.div>
        
       </div>
