@@ -42,7 +42,7 @@ const Hero = () => {
          
         </motion.p>
         <motion.p initial={{x:100,opacity:0}} animate={{x:0,opacity:1}} transition={{duration:0.5,delay:1}} className="text-white sm:text-2xl font-bold my-3 text-2xl md:text-4xl py-3">
-          Computer Engineering Undergraduate
+          Associate Software Engineer
         </motion.p>
 
         <div className="my-8 flex items-center justify-center md:justify-start">

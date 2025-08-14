@@ -28,9 +28,12 @@ const Navbar = () => {
   const smoothScroll = (e, id) => {
     e.preventDefault();
     const element = document.getElementById(id);
-    element.scrollIntoView({
+    const navbarHeight = 100; // Height of the fixed navbar
+    const elementPosition = element.offsetTop - navbarHeight;
+    
+    window.scrollTo({
+      top: elementPosition,
       behavior: "smooth",
-      block: "start",
     });
   };
 
@@ -115,10 +118,38 @@ const Navbar = () => {
           }}
           className="p-5"
         >
+          <a  className="bg-gradient-to-r from-slate-200 to-orange-600 bg-clip-text text-transparent" href="#experience" onClick={(e) => smoothScroll(e, "experience")}>
+            Experience
+          </a>
+        </motion.li>
+       <motion.li
+          whileHover={{
+            scale: [1, 1.4, 1.2],
+            rotate: [0, 10, -10, 0],
+            transition: {
+              duration: 0.2,
+            },
+          }}
+          className="p-5"
+        >
           <a  className="bg-gradient-to-r from-slate-200 to-orange-600 bg-clip-text text-transparent" href="#work" onClick={(e) => smoothScroll(e, "work")}>
             Work
           </a>
         </motion.li>
+       {/* <motion.li
+          whileHover={{
+            scale: [1, 1.4, 1.2],
+            rotate: [0, 10, -10, 0],
+            transition: {
+              duration: 0.2,
+            },
+          }}
+          className="p-5"
+        >
+          <a  className="bg-gradient-to-r from-slate-200 to-orange-600 bg-clip-text text-transparent" href="#extracurricular" onClick={(e) => smoothScroll(e, "extracurricular")}>
+            Extra Curricular
+          </a>
+        </motion.li> */}
        <motion.li
           whileHover={{
             scale: [1, 1.4, 1.2],
@@ -152,13 +183,19 @@ const Navbar = () => {
             <a href="#hero">Home</a>
           </li>
           <li className="p-5">
+            <a href="#about">About</a>
+          </li>
+          <li className="p-5">
+            <a href="#experience">Experience</a>
+          </li>
+          <li className="p-5">
             <a href="#work">Work</a>
           </li>
           <li className="p-5">
-            <a href="#contact">Contact</a>
+            <a href="#extracurricular">Extra Curricular</a>
           </li>
           <li className="p-5">
-            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
           </li>
           <div className="flex">
             <li className="p-5">
