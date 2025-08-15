@@ -13,13 +13,19 @@ import podi from "../assets/podi.png";
 import agent from "../assets/agent.png";
 import genie from "../assets/genie.png";
 import voting from "../assets/voting.png";
-import pf from "../assets/Projects/pf.png";
+import ip from "../assets/ip.jpg";
 import em from "../assets/Projects/em.jpg";
 
-const ProjectCard = ({ to, imageSrc, alt, category }) => {
+const ProjectCard = ({ to, imageSrc, alt, category, disabled }) => {
+  const cardClasses =
+    "group relative rounded-2xl overflow-hidden shadow-2xl transform transition duration-300 " +
+    (disabled
+      ? "opacity-50 cursor-not-allowed pointer-events-none"
+      : "hover:scale-105");
+
   return (
-    <div className="group relative rounded-2xl overflow-hidden shadow-2xl transform transition duration-300 hover:scale-105">
-      {to ? (
+    <div className={cardClasses}>
+      {!disabled && to ? (
         <Link to={to} className="block w-full h-full relative">
           <img src={imageSrc} alt={alt} className="w-full h-64 object-cover" />
           {category && (
@@ -27,8 +33,6 @@ const ProjectCard = ({ to, imageSrc, alt, category }) => {
               {category}
             </span>
           )}
-
-          {/* Overlay */}
           <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <p className="text-white font-bold text-lg md:text-xl text-center px-2">
               {alt}
@@ -38,13 +42,18 @@ const ProjectCard = ({ to, imageSrc, alt, category }) => {
       ) : (
         <>
           <img src={imageSrc} alt={alt} className="w-full h-64 object-cover" />
-          <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center">
             <p className="text-white font-bold text-lg md:text-xl text-center px-2">
               {alt}
             </p>
             {category && (
               <span className="text-xs md:text-sm px-2 py-1 bg-blue-600 rounded mt-2">
                 {category}
+              </span>
+            )}
+            {disabled && (
+              <span className="mt-2 text-red-400 text-xs italic">
+                In Development
               </span>
             )}
           </div>
@@ -120,15 +129,37 @@ const Work = () => {
       category:
         "AI, ML & Cryptography Related Applications and Other Applications",
       items: [
-        { to: "/groupchat", image: gc, name: "Multi Threaded Group Chat", category:"Java Multi Threaded" },
-        { to: "/agent-ai", image: agent, name: "Agent AI Application", category:"AI" },
+        {
+          to: "/attendence-system",
+          image: ip,
+          name: "Face recognition attendance system",
+          category: "Image Processing",
+          disabled: true,
+        },
+        {
+          to: "/agent-ai",
+          image: agent,
+          name: "Agent AI Application",
+          category: "AI",
+        },
         {
           to: "/voting-system",
           image: voting,
           name: "Voting System Using Cryptography",
           category: "Cryptography",
         },
-        { to: "/ai", image: ai, name: "Mobile Phone Price Predictor", category: "ML" },
+        {
+          to: "/groupchat",
+          image: gc,
+          name: "Multi Threaded Group Chat",
+          category: "Java Multi Threaded",
+        },
+        {
+          to: "/ai",
+          image: ai,
+          name: "Mobile Phone Price Predictor",
+          category: "ML",
+        },
       ],
     },
   ];
@@ -157,6 +188,7 @@ const Work = () => {
                 imageSrc={project.image}
                 alt={project.name}
                 category={project.category}
+                disabled={project.disabled}
               />
             ))}
           </div>

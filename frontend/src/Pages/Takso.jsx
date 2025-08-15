@@ -7,6 +7,7 @@ import Animation from "../Components/Animation";
 
 const bulletPoints = [
   "Handled around 80%-100% of sprint tasks independently with senior guidance",
+  "Worked with SQL queries for extracting and manipulating activity data related to users & organizations",
   "Actively engaged with client to gather requirements and provide updates",
   "Implemented Grant CSV upload feature",
   "Developed duplicate user handling feature",
@@ -18,7 +19,7 @@ const bulletPoints = [
   "Designed modular audit log system showing previous and updated values",
   "Managed releases via JIRA, Confluence, and Git PRs",
   "Estimated sprints with Fibonacci story points and conducted backlog grooming",
-  "Authored user stories, technical documentation, and flowcharts"
+  "Authored user stories, technical documentation, and flowcharts",
 ];
 
 const Takso = () => {
@@ -44,7 +45,8 @@ const Takso = () => {
             className="space-y-4"
           >
             <p className="text-left text-gray-300 text-lg leading-relaxed max-w-3xl">
-              Takso is an Australian cultural activity planning web application used by government councils and organizations.
+              Takso is an Australian cultural activity planning web application
+              used by government councils and organizations.
             </p>
             <Link
               to="https://takso-app.com/"

@@ -14,7 +14,7 @@ const ExtraCurricular = () => {
       icon: "🏏",
       title: "Playing Cricket",
       description:
-        "I'm passionate about cricket and can identify myself as an all-rounder😉. Cricket has taught me valuable lessons about teamwork, strategy, and perseverance that I apply in my professional life as well.",
+        "I'm passionate about cricket and can identify myself as a fast bowling all-rounder😉. Cricket has taught me valuable lessons about teamwork, strategy, and perseverance that I apply in my professional life as well.",
     },
     {
       icon: "🎯",
@@ -31,7 +31,10 @@ const ExtraCurricular = () => {
   ];
 
   return (
-    <div className="bg-black text-white px-6 md:px-32 py-16" id="extracurricular">
+    <div
+      className="bg-black text-white px-6 md:px-32 py-16"
+      id="extracurricular"
+    >
       <motion.h2
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: isVisible ? 0 : -100, opacity: isVisible ? 1 : 0 }}
@@ -73,10 +76,7 @@ const ExtraCurricular = () => {
           className="hidden md:flex flex-col items-center justify-center space-y-12"
         >
           {activities.map((act, index) => (
-            <div
-              key={index}
-              className="text-6xl md:text-8xl animate-bounce"
-            >
+            <div key={index} className="text-6xl md:text-8xl animate-bounce">
               {act.icon}
             </div>
           ))}
