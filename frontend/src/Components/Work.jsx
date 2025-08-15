@@ -15,6 +15,7 @@ import genie from "../assets/genie.png";
 import voting from "../assets/voting.png";
 import ip from "../assets/ip.jpg";
 import em from "../assets/Projects/em.jpg";
+import blogger from "../assets/blogger.png";
 
 const ProjectCard = ({ to, imageSrc, alt, category, disabled }) => {
   const cardClasses =
@@ -90,7 +91,13 @@ const Work = () => {
           to: "/agent-ai",
           image: agent,
           name: "Agent AI Application",
-          category: "Flutter",
+          category: "ReactJs + NestJs + Django",
+        },
+         {
+          to: "/blogger",
+          image: blogger,
+          name: "Vite Blogger",
+          category: "Microservice Architecture",
         },
 
         {

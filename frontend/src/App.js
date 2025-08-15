@@ -21,6 +21,7 @@ import PodiBusiness from "./Pages/PodiBusiness";
 import AgentAI from "./Pages/AgentAI";
 import VotingSystem from "./Pages/VotingSystem";
 import ScrollToTop from "./Utils/scroll-top.utils";
+import Blogger from "./Pages/Blogger";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Route path="/podi-business" element={<PodiBusiness />} />
           <Route path="/clean-control" element={<SM />} />
           <Route path="/voting-system" element={<VotingSystem />} />
+          <Route path="/blogger" element={<Blogger />} />
         </Routes>
       </div>
     </BrowserRouter>

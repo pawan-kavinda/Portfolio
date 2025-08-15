@@ -38,7 +38,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-black h-[100px] text-xl text-white max-w-[1550px] mx-auto flex justify-between items-center md:px-20 px-12 fixed top-0 left-0 right-0 z-50">
+    <div className="bg-black w-full h-[100px] text-xl text-white  mx-auto flex justify-between items-center md:px-20 px-12 fixed top-0 left-0 right-0 z-50">
       <h1 className="text-xl md:px-8 md:text-2xl font-bold bg-gradient-to-r from-slate-200 to-orange-600 bg-clip-text text-transparent">
         PAWAN <span className="hidden sm:hidden md:inline">KAVINDA</span>
       </h1>
