@@ -6,6 +6,7 @@ import { CheckCircleIcon } from "@heroicons/react/24/solid";
 const PodiBusiness = () => {
   const webHighlights = [
     "Started working with the team from the planning phase of the project.",
+    "Collaboratively worked with the team members.",
     "Integrated the file upload feature using AWS S3 bucket.",
     "Implemented forgot password functionality.",
     "Integrated backend functionality for invoice related operations such as invoice creation, retrieval, and management.",
