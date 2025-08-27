@@ -7,7 +7,7 @@ const Dialog = () => {
 const highlights = [
     "Application consist with mobile application, web based admin portal and a common backend.",
     "I have worked with web application development and the backend development relavent to both mobile and web portals",
-    "Handled bug fixing, new feature development, enhancements and all the development tasks 100% by myself after 2 weeks of project onboarding",
+    "Handled 90-100% the project sprint tasks ( bug fixing, new feature development, enhancements, documentations) after 2 weeks of project onboarding",
     "Collaborated closely with the mobile development team to deliver backend functionalities aligned with application requirements.",
     "Implemented custom migration system for MongoDB",
     "Addressed key security vulnerabilities (XSS, brute-force, injection) with robust sanitization, rate limiting, and validation",
