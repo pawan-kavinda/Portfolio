@@ -6,9 +6,10 @@ import takso from "../assets/takso.png";
 import Animation from "../Components/Animation";
 
 const bulletPoints = [
-  "Handled around 80%-100% of sprint tasks independently with senior guidance",
+  "Handled around 80%-100% of sprint tasks",  
   "Worked with SQL queries for extracting and manipulating activity data related to users & organizations",
   "Actively engaged with client to gather requirements and provide updates",
+  "Implemented system data export for client side",
   "Implemented Grant CSV upload feature",
   "Developed duplicate user handling feature",
   "Designed and implemented activity evaluation feature flow",
