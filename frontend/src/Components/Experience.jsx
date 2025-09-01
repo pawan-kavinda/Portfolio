@@ -39,9 +39,9 @@ const Experience = () => {
             transition={{ duration: 0.5, delay: 1 }}
             className="md:px-16 lg:text-lg"
           >
-            Currently working as a full stack developer at Beta Launch (First 6 months as an Intern software engineer and after that as an Associate software engineer). During this period
+            Worked as a full stack developer at Beta Launch (First 6 months as an Intern software engineer and after that as an Associate software engineer). During this period
             I've been able to develop my knowledge on various design patterns, project
-            management, delivery and deployment processes, etc. Currently, I'm contributing
+            management, delivery and deployment processes, etc. I contributed
             to multiple active projects.
           </motion.p>
 
@@ -63,8 +63,7 @@ const Experience = () => {
             transition={{ duration: 0.5, delay: 1.4 }}
             className="md:px-16 lg:text-lg mt-4"
           >
-            Besides that, I have over 2 years of experience in React and Node.js, and nearly 1 year
-            of experience in Flutter and ASP.NET frameworks during university and personal projects.
+            From above applications, I worked as the main developer on Dialog Genie Loan Management Application and the Takso Application while actively engaging with the clients.
           </motion.p>
         </div>
       </div>
