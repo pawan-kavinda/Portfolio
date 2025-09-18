@@ -30,7 +30,7 @@ const Navbar = () => {
     const element = document.getElementById(id);
     const navbarHeight = 100; // Height of the fixed navbar
     const elementPosition = element.offsetTop - navbarHeight;
-    
+
     window.scrollTo({
       top: elementPosition,
       behavior: "smooth",
@@ -47,7 +47,6 @@ const Navbar = () => {
           <motion.li
             variants={motionIcons(1)}
             initial="initial"
-            animate="animate"
             className="p-5"
           >
             <FaGithub className="bg-gray-500 transform w-7 h-7 transition-transform duration-300 hover:scale-125 overflow-hidden shadow-lg shadow-yellow-100"></FaGithub>
@@ -58,7 +57,6 @@ const Navbar = () => {
           <motion.li
             variants={motionIcons(5)}
             initial="initial"
-            animate="animate"
             className="p-5"
           >
             <FaInstagram className="bg-red-800 w-7 h-7 transform transition-transform duration-300 hover:scale-125 overflow-hidden shadow-lg shadow-yellow-100"></FaInstagram>
@@ -68,7 +66,6 @@ const Navbar = () => {
           <motion.li
             variants={motionIcons(10)}
             initial="initial"
-            animate="animate"
             className="p-5"
           >
             <FaLinkedin className="bg-blue-400 w-7 h-7 transform transition-transform duration-300 hover:scale-125 overflow-hidden shadow-lg shadow-yellow-100"></FaLinkedin>
@@ -79,7 +76,7 @@ const Navbar = () => {
         <motion.li
           whileHover={{
             scale: [1, 1.4, 1.2],
-            rotate: [0, 10, -10, 0],
+
             transition: {
               duration: 0.2,
             },
@@ -94,49 +91,61 @@ const Navbar = () => {
             Home
           </a>
         </motion.li>
-       <motion.li
+        <motion.li
           whileHover={{
             scale: [1, 1.4, 1.2],
-            rotate: [0, 10, -10, 0],
+
             transition: {
               duration: 0.2,
             },
           }}
           className="p-5"
         >
-          <a  className="bg-gradient-to-r from-slate-200 to-orange-600 bg-clip-text text-transparent" href="#about" onClick={(e) => smoothScroll(e, "about")}>
+          <a
+            className="bg-gradient-to-r from-slate-200 to-orange-600 bg-clip-text text-transparent"
+            href="#about"
+            onClick={(e) => smoothScroll(e, "about")}
+          >
             About
           </a>
         </motion.li>
-       <motion.li
+        <motion.li
           whileHover={{
             scale: [1, 1.4, 1.2],
-            rotate: [0, 10, -10, 0],
+
             transition: {
               duration: 0.2,
             },
           }}
           className="p-5"
         >
-          <a  className="bg-gradient-to-r from-slate-200 to-orange-600 bg-clip-text text-transparent" href="#experience" onClick={(e) => smoothScroll(e, "experience")}>
+          <a
+            className="bg-gradient-to-r from-slate-200 to-orange-600 bg-clip-text text-transparent"
+            href="#experience"
+            onClick={(e) => smoothScroll(e, "experience")}
+          >
             Experience
           </a>
         </motion.li>
-       <motion.li
+        <motion.li
           whileHover={{
             scale: [1, 1.4, 1.2],
-            rotate: [0, 10, -10, 0],
+
             transition: {
               duration: 0.2,
             },
           }}
           className="p-5"
         >
-          <a  className="bg-gradient-to-r from-slate-200 to-orange-600 bg-clip-text text-transparent" href="#work" onClick={(e) => smoothScroll(e, "work")}>
+          <a
+            className="bg-gradient-to-r from-slate-200 to-orange-600 bg-clip-text text-transparent"
+            href="#work"
+            onClick={(e) => smoothScroll(e, "work")}
+          >
             Work
           </a>
         </motion.li>
-       {/* <motion.li
+        {/* <motion.li
           whileHover={{
             scale: [1, 1.4, 1.2],
             rotate: [0, 10, -10, 0],
@@ -150,7 +159,7 @@ const Navbar = () => {
             Extra Curricular
           </a>
         </motion.li> */}
-       <motion.li
+        <motion.li
           whileHover={{
             scale: [1, 1.4, 1.2],
             rotate: [0, 10, -10, 0],
@@ -160,7 +169,11 @@ const Navbar = () => {
           }}
           className="p-5"
         >
-          <a  className="bg-gradient-to-r from-slate-200 to-orange-600 bg-clip-text text-transparent" href="#contact" onClick={(e) => smoothScroll(e, "contact")}>
+          <a
+            className="bg-gradient-to-r from-slate-200 to-orange-600 bg-clip-text text-transparent"
+            href="#contact"
+            onClick={(e) => smoothScroll(e, "contact")}
+          >
             Contact
           </a>
         </motion.li>

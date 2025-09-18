@@ -22,6 +22,7 @@ import AgentAI from "./Pages/AgentAI";
 import VotingSystem from "./Pages/VotingSystem";
 import ScrollToTop from "./Utils/scroll-top.utils";
 import Blogger from "./Pages/Blogger";
+import SalaryCalculator from "./Pages/SalaryCalculator";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Route path="/dialog-genie" element={<Dialog />} />
           <Route path="/podi-business" element={<PodiBusiness />} />
           <Route path="/clean-control" element={<SM />} />
+          <Route path="/salary-calculator" element={<SalaryCalculator />} />
           <Route path="/voting-system" element={<VotingSystem />} />
           <Route path="/blogger" element={<Blogger />} />
         </Routes>

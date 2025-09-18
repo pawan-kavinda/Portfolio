@@ -39,7 +39,7 @@ const Experience = () => {
             transition={{ duration: 0.5, delay: 1 }}
             className="md:px-16 lg:text-lg"
           >
-            Worked as a full stack developer at Beta Launch (First 6 months as an Intern software engineer and after that as an Associate software engineer). During this period
+            Worked as a full stack developer at Beta Launch for a one year (First 6 months as an Intern software engineer and after that as an Associate software engineer). During this period
             I've been able to develop my knowledge on various design patterns, project
             management, delivery and deployment processes, etc. I contributed
             to multiple active projects.

@@ -67,7 +67,7 @@ const Blogger = () => {
             View Project
           </a>
            <a
-            href="https://github.com/pawan-kavinda/Blog-master-client-service"
+            href="https://github.com/EC7205-Cloud-Computing/infra"
             target="_blank"
             rel="noopener noreferrer"
             className="ml-8 inline-block bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transform transition duration-300 text-white"

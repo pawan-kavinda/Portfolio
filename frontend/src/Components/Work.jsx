@@ -16,6 +16,7 @@ import voting from "../assets/voting.png";
 import ip from "../assets/ip.jpg";
 import em from "../assets/Projects/em.jpg";
 import blogger from "../assets/blogger.png";
+import salaryCalculator from "../assets/salary-calculator.png";
 
 const ProjectCard = ({ to, imageSrc, alt, category, disabled }) => {
   const cardClasses =
@@ -73,39 +74,45 @@ const Work = () => {
           to: "/takso",
           image: takso,
           name: "Takso Application",
-          category: "ReactJS + ExpressJS",
+          category: "ReactJS + ExpressJS + MySQL",
         },
         {
           to: "/dialog-genie",
           image: genie,
           name: "Dialog Genie Application",
-          category: "ReactJS + NestJS",
+          category: "ReactJS + NestJS + MongoDB",
         },
         {
           to: "/podi-business",
           image: podi,
           name: "Podi Business Application",
-          category: "ReactJS + NestJS",
+          category: "ReactJS + NestJS + PostgreSQL",
         },
         {
           to: "/agent-ai",
           image: agent,
           name: "Agent AI Application",
-          category: "ReactJs + NestJs + Django",
+          category: "ReactJs + NestJs + Django + MongoDB",
         },
-         {
+        {
           to: "/blogger",
           image: blogger,
           name: "Vite Blogger",
-          category: "Microservice Architecture",
+          category: "ReactJS, ExpressJS, NestJS, PostgreSQL,MongoDB,AWS",
         },
 
         {
           to: "/ems",
           image: em,
           name: "EMS Application",
-          category: "ASP .NET",
+          category: "ASP .NET MVC",
         },
+        {
+          to: "/salary-calculator",
+          image: salaryCalculator,
+          name: "Salary Calculator",
+          category: "ReactJs + Tailwind CSS",
+        }
       ],
     },
     {
@@ -115,7 +122,7 @@ const Work = () => {
           to: "/foodstore",
           image: fs,
           name: "Food Store Application",
-          category: "Flutter",
+          category: "Flutter + Firebase",
         },
         ,
         {
@@ -128,7 +135,7 @@ const Work = () => {
           to: "/supermarket",
           image: sm,
           name: "Supermarket Application",
-          category: "Flutter",
+          category: "Flutter + Firebase",
         },
       ],
     },
@@ -161,12 +168,12 @@ const Work = () => {
           name: "Multi Threaded Group Chat",
           category: "Java Multi Threaded",
         },
-        {
-          to: "/ai",
-          image: ai,
-          name: "Mobile Phone Price Predictor",
-          category: "ML",
-        },
+        // {
+        //   to: "/ai",
+        //   image: ai,
+        //   name: "Mobile Phone Price Predictor",
+        //   category: "ML",
+        // },
       ],
     },
   ];
