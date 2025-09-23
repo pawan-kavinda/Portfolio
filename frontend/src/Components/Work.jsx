@@ -168,12 +168,12 @@ const Work = () => {
           name: "Multi Threaded Group Chat",
           category: "Java Multi Threaded",
         },
-        // {
-        //   to: "/ai",
-        //   image: ai,
-        //   name: "Mobile Phone Price Predictor",
-        //   category: "ML",
-        // },
+        {
+          to: "/ai",
+          image: ai,
+          name: "Mobile Phone Price Predictor",
+          category: "ML",
+        },
       ],
     },
   ];
