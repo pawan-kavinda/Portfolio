@@ -11,6 +11,12 @@ const ExtraCurricular = () => {
 
   const activities = [
     {
+      icon: "🌟",
+      title: "Haxtreem 2024",
+      description:
+        "Participated and secured 5th place in Haxtreem 2024, a prestigious hackathon organized by the University of Ruhuna. Collaborated with a team to develop innovative solutions and enhance my coding skills in a competitive environment.",
+    },
+    {
       icon: "🏏",
       title: "Playing Cricket",
       description:
