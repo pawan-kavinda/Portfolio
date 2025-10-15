@@ -23,7 +23,7 @@ import VotingSystem from "./Pages/VotingSystem";
 import ScrollToTop from "./Utils/scroll-top.utils";
 import Blogger from "./Pages/Blogger";
 import SalaryCalculator from "./Pages/SalaryCalculator";
-
+import YourPortfolio from "./Pages/YourPortfolio";
 function App() {
   return (
     <BrowserRouter scrollRestoration="auto">
@@ -45,6 +45,7 @@ function App() {
           <Route path="/salary-calculator" element={<SalaryCalculator />} />
           <Route path="/voting-system" element={<VotingSystem />} />
           <Route path="/blogger" element={<Blogger />} />
+          <Route path="/your-portfolio" element={<YourPortfolio />} />
         </Routes>
       </div>
     </BrowserRouter>

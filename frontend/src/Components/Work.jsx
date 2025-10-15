@@ -17,6 +17,7 @@ import ip from "../assets/ip.jpg";
 import em from "../assets/Projects/em.jpg";
 import blogger from "../assets/blogger.png";
 import salaryCalculator from "../assets/salary-calculator.png";
+import yourPortfolio from "../assets/your-portfolio.png";
 
 const ProjectCard = ({ to, imageSrc, alt, category, disabled }) => {
   const cardClasses =
@@ -92,7 +93,13 @@ const Work = () => {
           to: "/agent-ai",
           image: agent,
           name: "Agent AI Application",
-          category: "ReactJs + NestJs + Django + MongoDB",
+          category: "ReactJs + NestJs + FastAPI + MongoDB, RAG",
+        },
+          {
+          to: "/your-portfolio",
+          image: yourPortfolio,
+          name: "Your Portfolio Application",
+          category: "AngularJS + NodeJS + MongoDB + Vercel",
         },
         {
           to: "/blogger",
