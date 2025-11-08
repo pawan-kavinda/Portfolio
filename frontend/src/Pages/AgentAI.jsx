@@ -6,6 +6,8 @@ import { CheckCircleIcon } from "@heroicons/react/24/solid";
 const AgentAI = () => {
   const highlights = [
     "Web-based platform for business owners to create AI agents for their businesses",
+    "Whatsapp integration for customer interaction with AI agents",
+    "Dual Agent architecture with utilized RAG pipeline",
     "Condition-based chat responses for faster and easier agent creation",
     "More secure prompt validations through lakera guard",
     "Provides separate AI agents for business owner usage and for customer usage",

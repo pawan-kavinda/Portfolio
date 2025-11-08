@@ -107,12 +107,18 @@ const Work = () => {
           name: "Vite Blogger",
           category: "ReactJS, ExpressJS, NestJS, PostgreSQL,MongoDB,AWS",
         },
+        {
+          to: "/stall-reservation",
+          image: ems,
+          name: "Book Fair Stall Reservation System",
+          category: "ASP.NET MVC, PostgreSQL",
+        },
 
         {
           to: "/ems",
           image: em,
           name: "EMS Application",
-          category: "ASP .NET MVC",
+          category: "ASP.NET MVC",
         },
         {
           to: "/salary-calculator",
