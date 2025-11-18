@@ -30,7 +30,7 @@ const Blogger = () => {
           {/* Mobile App Section */}
           <div className="backdrop-blur-lg bg-gray-900/60 rounded-3xl p-8 md:p-12 shadow-xl border border-gray-800 mb-16">
             <p className="text-orange-400 font-semibold mb-6">
-              Technology Stack: ReactJs, MongoDB, Postgre SQL, AWS , Docker,
+              Technology Stack: ReactJs,NextJS, MongoDB, Postgre SQL, AWS , Docker,
               Jenkins
             </p>
 

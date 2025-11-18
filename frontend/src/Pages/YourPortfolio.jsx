@@ -65,7 +65,7 @@ const YourPortfolio = () => {
           <div className="backdrop-blur-lg bg-gray-900/60 rounded-3xl p-10 shadow-xl border border-gray-800">
             <h2 className="text-orange-400 text-2xl font-semibold mb-6">Technologies Used</h2>
             <p className="text-lg text-gray-300 mb-10">
-              React.js, Node.js, Express.js, MongoDB, Vercel API, React Query, Tailwind CSS, JWT, Nodemailer, Docker
+              NextJS, Node.js, Express.js, MongoDB, Vercel API, React Query, Tailwind CSS, JWT, Nodemailer, Docker
             </p>
 
             <h2 className="text-orange-400 text-2xl font-semibold mb-6">Key Highlights</h2>

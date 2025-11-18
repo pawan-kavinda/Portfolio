@@ -97,13 +97,13 @@ const Work = () => {
           to: "/your-portfolio",
           image: yourPortfolio,
           name: "Your Portfolio Application",
-          category: "AngularJS + NodeJS + MongoDB + Vercel",
+          category: "NextJS + NodeJS + MongoDB + Vercel",
         },
         {
           to: "/blogger",
           image: blogger,
           name: "Vite Blogger",
-          category: "ReactJS, ExpressJS, NestJS, PostgreSQL,MongoDB,AWS",
+          category: "ReactJS, NextJS ExpressJS, NestJS, PostgreSQL,MongoDB,AWS",
         },
         {
           to: "/stall-reservation",
