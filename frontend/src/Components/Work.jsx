@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-
-// Images
 import ai from "../assets/ml.jpg";
 import gc from "../assets/Projects/gc.jpg";
 import ems from "../assets/Projects/ems.jpg";
